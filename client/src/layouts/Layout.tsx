@@ -1,13 +1,13 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-
-export default function Layout({children}) {
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import {Container} from '@mui/material'
+export default function Layout({ children }) {
   return (
     <>
-      <Header/>
-      {children}
-      <Footer/>
+      <Header />
+      <Container>{children}</Container>
+      <Footer />
     </>
-  )
+  );
 }
